@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icontodo.jpg" type="image/x-icon" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todolist">
+        <!-- Create -->
+        <form id="CreateForm" action="javascript:void(0);">
+          <input type="text" id="addtask" placeholder="New Task" required />
+          <input type="submit" onclick="Create()" value="CREATE" />
+        </form>
+        <!-- Update  -->
+        <form id="UpdateForm" action="javascript:void(0);">
+          <input type="text" id="updatetask" placeholder="Edit your Task" />
+          <input type="submit" value="UPDATE" />
+        </form>
+        <!-- Our TodoList -->
+        <div class="displaylist">
+          <table>
+            <tr>
+              <th><u>Todo Items:</u></th>
+            </tr>
+            <tbody id="displaytodo"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
